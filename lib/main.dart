@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './home.dart' as HomeScreen;
+import './home.dart' as HomeScreens;
 
 
 main(){
@@ -12,7 +12,7 @@ class App extends StatelessWidget{
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Portfolio',
-        home: HomeScreen.Home()
+        home: HomeScreens.Home()
     );
   }
 
