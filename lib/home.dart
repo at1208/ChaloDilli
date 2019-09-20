@@ -3,27 +3,31 @@ import 'package:flutter/material.dart';
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.black,
+        primary: true,
         appBar:AppBar(
-            backgroundColor: Colors.pink,
+            backgroundColor: Colors.black,
             centerTitle: true,
             title: Text( 'Chalo Dilli',
                 style: TextStyle(
                   fontStyle: FontStyle.normal,
                   fontWeight: FontWeight.bold,
-                  fontSize: 30,
+                  fontSize: 40,
                   color: Colors.white,
                 )
             )
         ),
         drawer: Drawer(child: Container(
             child: AppBar(
-              backgroundColor: Colors.blue[100],
-            )
-        )
-        )
+              backgroundColor: Colors.black54,
+            ),
+          )
+        ),
+        body: Container(child: Column(
+          children: <Widget>[],
+          ),
+        ),
     );
   }
 }
